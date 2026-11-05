@@ -1,0 +1,56 @@
+{
+  "name": "mortgage-rates-today-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for mortgage rates today: this week's Freddie Mac PMMS average 30-year and 15-year fixed rates, week and year changes, history since 1971 and monthly payment math, read live from freddiemac.com.",
+  "type": "module",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "mcpName": "io.github.theluckystrike/mortgage-rates-today-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/mortgage-rates-today-mcp"
+  },
+  "homepage": "https://www.mcpstamp.com/servers/",
+  "bin": {
+    "mortgage-rates-today-mcp": "dist/stdio.js"
+  },
+  "main": "dist/stdio.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test",
+    "start": "node dist/stdio.js",
+    "deploy": "npx wrangler@4 deploy"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "mortgage-rates",
+    "mortgage-rates-today",
+    "mortgage-rate",
+    "30-year-fixed",
+    "15-year-fixed",
+    "freddie-mac",
+    "pmms",
+    "mortgage",
+    "mortgage-calculator",
+    "interest-rates"
+  ]
+}

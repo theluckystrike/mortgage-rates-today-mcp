@@ -1,0 +1,6 @@
+[
+  ["get_mortgage_rates_today", {}],
+  ["get_mortgage_rate_on_date", { "date": "2021-01-07" }],
+  ["get_mortgage_rate_history", { "start_date": "2024-01-01", "frequency": "monthly" }],
+  ["calculate_mortgage_payment", { "loan_amount": 400000 }]
+]

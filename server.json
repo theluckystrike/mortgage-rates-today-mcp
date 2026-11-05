@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.theluckystrike/mortgage-rates-today-mcp",
+  "title": "Mortgage Rates Today MCP",
+  "description": "Mortgage rates today: Freddie Mac weekly 30 and 15 year fixed averages, history and payment math.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/theluckystrike/mortgage-rates-today-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mortgage-rates-today-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}
